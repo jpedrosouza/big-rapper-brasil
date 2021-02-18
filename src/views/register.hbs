@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar - Big Rapper Brasil</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <nav class="p-4 flex justify-between shadow-lg">
+        <span>Big Rapper Brasil</span>
+
+        <div class="w-2/5 flex justify-around">
+            <a href="/"><button class="button-pages"><span class="text-sm pl-3 pr-3">Início</span></button></a>
+            <a href="/registrar"><button class="button-pages text-base"><span class="text-sm pl-3 pr-3">Cadastrar</span></button></a>
+            <a href="/votar"><button class="button-pages text-base"><span class="text-sm pl-3 pr-3">Votar</span></button></a>
+            <a href="/vencedor-momento"><button class="button-pages text-base"><span class="text-sm pl-3 pr-3">Vencedor no momento</span></button></a>
+        </div>
+    </nav>
+    
+    <div class="mt-20 ml-20 mr-20 mb-20 flex flex-col">
+        <h1 class="self-center text-2xl font-bold">Se inscreva para o Big Rapper Brasil</h1>
+    
+        <form class="mt-10 w-2/5 flex flex-col self-center" action="">
+            <input required class="h-12 mt-5 pl-2 pr-2 shadow rounded-md border font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" type="text" name="name" id="name" placeholder="Informe seu nome...">
+            <input required class="h-12 mt-5 pl-2 pr-2 shadow rounded-md border font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" type="text" name="music" id="music" placeholder="Informe uma música...">
+            <input required class="h-12 mt-5 pl-2 pr-2 shadow rounded-md border font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" type="text" name="image" id="image" placeholder="Informe o link de uma imagem...">
+            <input class="mt-8 h-12 cursor-pointer bg-blue-500 rounded-md text-white text-sm hover:text-blue-500 hover:bg-white hover:shadow-md" type="submit" value="CADASTRAR">
+        </form> 
+    </div>
+
+</body>
+</html>

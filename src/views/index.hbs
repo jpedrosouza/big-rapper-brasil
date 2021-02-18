@@ -1,23 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início - Big Rapper Brasil</title>
 
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <nav class="menu">
+    <nav class="p-4 flex justify-between shadow-lg">
         <span>Big Rapper Brasil</span>
 
-        <div class="menu-pages">
-            <button class="button-pages"><span>Início</span></button>
-            <button class="button-pages"><span>Cadastrar</span></button>
-            <button class="button-pages"><span>Votar</span></button>
-            <button class="button-pages"><span>Vencedor no momento</span></button>
+        <div class="w-2/5 flex justify-around">
+            <a href="/"><button class="button-pages"><span class="text-sm pl-3 pr-3">Início</span></button></a>
+            <a href="/registrar"><button class="button-pages text-base"><span class="text-sm pl-3 pr-3">Cadastrar</span></button></a>
+            <a href="/votar"><button class="button-pages text-base"><span class="text-sm pl-3 pr-3">Votar</span></button></a>
+            <a href="/vencedor-momento"><button class="button-pages text-base"><span class="text-sm pl-3 pr-3">Vencedor no momento</span></button></a>
         </div>
     </nav>
+
+    <div class="flex flex-wrap mt-20 ml-20 mr-20 justify-around">
+        <div class="w-72 h-56 pr-2 pr-1 flex flex-col items-center justify-between shadow-lg rounded-xl text-center cursor-pointer transition transform duration-300 ease-in-out hover:scale-110">
+            <h1 class="pt-2">Vote no seu rapper favorito</h1>
+            <h3 class="pl-2 pr-2 font-light">Demonstre apoio ao seu rapper favorito através da nossa votação.</h3>
+            <a class="w-full" href="/votar"><button class="w-1/2 h-8 mb-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-xl text-white text-sm">VOTAR</button></a>
+        </div>
+        <div class="w-72 h-56 pr-2 pr-1 flex flex-col items-center justify-between shadow-lg rounded-xl text-center cursor-pointer transition transform duration-300 ease-in-out hover:scale-110">
+            <h1 class="pt-2">Inscreva-se e participe</h1>
+            <h3 class="mt-4 pl-2 pr-2 font-light">Que tal se inscrever e ter a chance de ganhar um prêmio de Melhor Rapper do Brasil!?</h3>
+            <a class="w-full" href="/registrar"><button class="w-1/2 h-8 mt-4 mb-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-xl text-white text-sm">INSCREVER</button></a>
+        </div>
+        <div class="w-72 h-56 pr-2 pr-1 flex flex-col items-center justify-between shadow-lg rounded-xl text-center cursor-pointer transition transform duration-300 ease-in-out hover:scale-110">
+            <h1 class="pt-2">Veja o vencedor do momento</h1>
+            <h3 class="mt-4 pl-2 pr-2 font-light">Acompanhe e saiba qual rapper esta vencendo em nossas votações no momento.</h3>
+            <a class="w-full" href="/vencedor-momento"><button class="w-1/2 h-8 mt-4 mb-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-xl text-white text-sm">CONFERIR</button></a>
+        </div>
+    </div>
+
+    <div class="w-full mt-20 flex justify-center text-2xl">
+        <h1>Perguntas Frequentes</h1>
+    </div>
+
+    <div class="mt-20 ml-20 mr-20 mb-20 flex items-center justify-between">
+        <div class="flex-col w-2/5 text-center">
+            <h1>Como posso me inscrever?</h1>
+            <h4 class="mt-4 font-light">Para se inscrever basta apertar o botão de inscrever (no menu da página), inserir seus dados e pronto, você já estará participando do Big Rapper Brasil! É rápido e grátis!</h4>
+        </div>
+        <div class="flex-col w-2/5 text-center">
+            <h1>Como posso votar?</h1>
+            <h4 class="mt-4 font-light">Para se votar é bem simples. Basta você ir na página de votação, escolher um rapper, clicar nele e logo em seguida apertar o botão de votar.</h4>
+        </div>
+    </div>
 </body>
 </html>

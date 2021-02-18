@@ -13,4 +13,17 @@ app.get('/', (req, res) => {
     return res.render('index');
 });
 
+app.get('/registrar', (req, res) => {
+    return res.render('register');
+});
+
+app.get('/votar', (req, res) => {
+    return res.render('vote');
+});
+
+app.get('/vencedor-momento', (req, res) => {
+    return res.render('momment-winner');
+});
+
+
 module.exports = app;
