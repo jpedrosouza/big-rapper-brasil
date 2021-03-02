@@ -24,10 +24,11 @@
     <div class="mt-20 ml-20 mr-20 mb-20 flex flex-col">
         <h1 class="self-center text-2xl font-bold">Se inscreva para o Big Rapper Brasil</h1>
     
-        <form class="mt-10 w-2/5 flex flex-col self-center" action="">
+        <form class="mt-10 w-2/5 flex flex-col self-center" action="/candidate/add-candidate" method="POST" enctype="multipart/form-data">
             <input required class="h-12 mt-5 pl-2 pr-2 shadow rounded-md border font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" type="text" name="name" id="name" placeholder="Informe seu nome...">
-            <input required class="h-12 mt-5 pl-2 pr-2 shadow rounded-md border font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" type="text" name="music" id="music" placeholder="Informe uma música...">
-            <input required class="h-12 mt-5 pl-2 pr-2 shadow rounded-md border font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" type="text" name="image" id="image" placeholder="Informe o link de uma imagem...">
+            <input required class="h-12 mt-5 pl-2 pr-2 shadow rounded-md border font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" type="text" name="featured_music" id="featured_music" placeholder="Informe uma música...">
+            <input required class="h-12 mt-5 pt-2 pl-2 pr-2 shadow rounded-md border font-light focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" type="file" name="candidate_image" id="candidate_image" placeholder="Seleciona uma imagem sua..." accept="image/png, image/jpg, image/jpeg, image/gif">
+            <label for="candidate_image" class="font-light pt-2">Selecione uma imagem sua para upload.</label>
             <input class="mt-8 h-12 cursor-pointer bg-blue-500 rounded-md text-white text-sm hover:text-blue-500 hover:bg-white hover:shadow-md" type="submit" value="CADASTRAR">
         </form> 
     </div>

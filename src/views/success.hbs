@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votar - Big Rapper Brasil</title>
+    <title>Sucesso - Big Rapper Brasil</title>
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/index.css">
-    <script defer src="/js/vote.js"></script>
+    <script defer src="/js/success.js"></script>
 </head>
 
 <body>
@@ -27,10 +27,10 @@
         </div>
     </nav>
 
-    {{!-- <img src="/assets/images/dancing.svg" alt="100" srcset="" height="100"> --}}
-
-    <div class="mt-20 ml-20 mr-20 mb-20 flex flex-col" id="candidates-container">
-        <h1 class="self-center text-2xl font-bold">Escolhe um(a) Rapper para votar</h1>
+    <div class="w-full flex flex-col justify-center">
+        <img class="h-72 pt-10" src="/assets/images/dancing.svg">
+        <h1 class="pt-10 pl-10 pr-10 pb-10 text-center text-xl">Que legal! Você acabou de ajudar seu rapper favorito a estar mais perto de ganhar! Fique à vontade para votar novamente.</h1>
+        <button class="w-1/4 h-12 border bg-blue-500 rounded-md self-center focus:border-blue-500 text-white" onclick="backVote()">Votar novamente</button>
     </div>
 
 </body>
